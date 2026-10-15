@@ -1,5 +1,5 @@
 ---
-pagetitle: "Maximilian Wegener, MPH"
+pagetitle: "Home"
 ---
 
 <!-- The home page content lives in index.md. Edit that file, not this one. -->

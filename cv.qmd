@@ -1,5 +1,5 @@
 ---
-pagetitle: "CV – Maximilian Wegener"
+pagetitle: "CV"
 toc: true
 toc-depth: 2
 toc-title: "Sections"
