@@ -1,0 +1,73 @@
+/* CV stylesheet — edit colors/fonts here, not in CV.md */
+:root {
+  --accent: #00356b;   /* Yale blue */
+  --muted: #5a6470;
+  --rule: #c9d3df;
+}
+
+@page { size: Letter; margin: 0.7in 0.75in; }
+
+html { font-size: 10.5pt; }
+body {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #1d232a;
+  line-height: 1.38;
+  max-width: 7.2in;
+  margin: 0 auto;
+  padding: 0.4in 0;
+}
+@media print { body { padding: 0; max-width: none; } }
+
+a { color: var(--accent); text-decoration: none; }
+
+/* Name + contact */
+h1 {
+  font-size: 2.1rem; font-weight: 700; letter-spacing: 0.01em;
+  color: var(--accent); margin: 0 0 0.15rem; text-align: center;
+}
+.contact { text-align: center; color: var(--muted); margin-bottom: 1.1rem; }
+.contact p { margin: 0; }
+
+/* Section headings */
+h2 {
+  font-size: 0.95rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.12em; color: var(--accent);
+  border-bottom: 1.5px solid var(--accent);
+  padding-bottom: 0.15rem; margin: 1.3rem 0 0.55rem;
+  break-after: avoid;
+}
+
+/* Entries (job, degree) with right-aligned date */
+h3 {
+  display: flex; justify-content: space-between; gap: 1rem;
+  font-size: 1rem; font-weight: 700; margin: 0.6rem 0 0.05rem;
+  break-after: avoid;
+}
+h3 .date { font-weight: 400; color: var(--muted); white-space: nowrap; }
+h3 + p { margin: 0 0 0.35rem; color: #3a434d; }
+
+/* Sub-headings inside a section (e.g., Pre-Prints) */
+h2 ~ h3:not(:has(.date)) {
+  font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.06em;
+  color: var(--muted); margin-top: 0.9rem;
+}
+
+p { margin: 0 0 0.4rem; }
+
+/* Lists */
+ul, ol { margin: 0.2rem 0 0.4rem; padding-left: 1.2rem; }
+li { margin-bottom: 0.28rem; break-inside: avoid; }
+li::marker { color: var(--accent); }
+
+/* Year-tagged lists: year in a left gutter, no bullet */
+ul:has(.yr) { list-style: none; padding-left: 0; }
+ul:has(.yr) li { display: flow-root; padding-left: 7.2rem; }
+.yr { float: left; width: 6.8rem; margin-left: -7.2rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.role { display: block; font-style: italic; color: var(--muted); font-size: 0.93em; }
+
+ol { padding-left: 2rem; }
+ol li::marker { font-size: 0.9em; color: var(--muted); }
+sup { font-size: 0.7em; line-height: 0; }
+
+/* Teaching block entries (Course / Location / Dates) */
+.entries p { margin: 0 0 0.6rem; break-inside: avoid; }

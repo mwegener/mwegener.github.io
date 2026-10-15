@@ -1,0 +1,6 @@
+# Private/local files: never upload these
+CV_Max Wegener.pdf
+CV.html
+_site/
+.DS_Store
+.Rhistory

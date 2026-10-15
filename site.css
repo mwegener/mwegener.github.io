@@ -1,0 +1,43 @@
+/* Extra styles for the public website (loaded after cv.css) */
+
+/* Hide private details on the public site and public PDF */
+.phone { display: none; }
+
+/* Top navigation */
+.site-nav {
+  display: flex; flex-wrap: wrap; gap: 0.4rem 1.4rem; align-items: center;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.6rem; margin-bottom: 1.6rem; font-size: 0.95rem;
+}
+.site-nav a { color: var(--muted); font-weight: 600; }
+.site-nav a:hover { color: var(--accent); }
+.site-nav .pdf {
+  margin-left: auto; color: #fff; background: var(--accent);
+  padding: 0.3rem 0.8rem; border-radius: 4px;
+}
+.site-nav .pdf:hover { color: #fff; opacity: 0.9; }
+@media print { .site-nav { display: none; } }
+
+/* Comfortable screen reading */
+@media screen {
+  html { font-size: 11.5pt; }
+  body { padding: 2rem 1.2rem 3rem; max-width: 50rem; }
+  a:hover { text-decoration: underline; }
+}
+
+/* Home page intro */
+.intro { font-size: 1.05rem; margin: 1rem 0 0.5rem; }
+.intro p { margin-bottom: 0.8rem; }
+
+/* Methods table */
+table { border-collapse: collapse; width: 100%; font-size: 0.92rem; margin: 0.4rem 0 1rem; }
+th, td { text-align: left; vertical-align: top; padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--rule); }
+th { color: var(--accent); border-bottom: 1.5px solid var(--accent); }
+tbody tr:nth-child(even) { background: #f5f8fb; }
+
+@media (max-width: 600px) {
+  h3 { flex-direction: column; gap: 0; }
+  ul:has(.yr) li { padding-left: 0; }
+  .yr { float: none; display: block; margin-left: 0; width: auto; }
+  table { font-size: 0.85rem; }
+}
