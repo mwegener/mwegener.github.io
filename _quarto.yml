@@ -1,0 +1,41 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - cv.qmd
+    - projects.qmd
+
+website:
+  title: "Maximilian Wegener, MPH"
+  site-url: https://mwegener.github.io
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: cv.qmd
+        text: CV
+      - href: projects.qmd
+        text: Methods & Projects
+    right:
+      - href: CV_Max_Wegener.pdf
+        text: Download CV (PDF)
+        icon: file-earmark-pdf
+      - icon: linkedin
+        href: https://www.linkedin.com/in/wegenermaximilian
+        aria-label: LinkedIn
+      - icon: github
+        href: https://github.com/mwegener
+        aria-label: GitHub
+  page-footer:
+    center: "Maximilian Wegener, MPH · Cushing/Whitney Medical Library, Yale School of Medicine"
+
+format:
+  html:
+    theme: [cosmo, theme.scss]
+    anchor-sections: false
+    smooth-scroll: true
+
+# Removes {.phone}, {.private} and {.private-item} content from the public site
+filters:
+  - strip-private.lua

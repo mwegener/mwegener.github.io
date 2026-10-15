@@ -18,9 +18,11 @@ end
 
 local function has_private_marker(item)
   local found = false
-  pandoc.walk_block(pandoc.Div(item), {
+  local finder = {
     Span = function(s) if s.classes:includes('private-item') then found = true end end
-  })
+  }
+  local div = pandoc.Div(item)
+  if div.walk then div:walk(finder) else pandoc.walk_block(div, finder) end
   return found
 end
 

@@ -1,0 +1,49 @@
+/*-- scss:defaults --*/
+$primary: #00356b;   // Yale blue
+$font-family-sans-serif: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$navbar-bg: #00356b;
+
+/*-- scss:rules --*/
+:root { --accent: #00356b; --muted: #5a6470; }
+
+// Scoped to the page content so the navbar and table of contents keep their normal look
+main.content {
+  /* Name + contact line */
+  h1 { color: var(--accent); font-weight: 700; }
+  .contact { color: var(--muted); margin-bottom: 1.2rem; }
+  .contact p { margin: 0; }
+
+  /* Section headings */
+  h2 {
+    font-size: 1.05rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.1em; color: var(--accent);
+    border-bottom: 1.5px solid var(--accent);
+    padding-bottom: 0.2rem; margin-top: 2rem;
+  }
+
+  /* Entries (job, degree, project) with right-aligned date */
+  h3 {
+    display: flex; justify-content: space-between; gap: 1rem;
+    font-size: 1rem; font-weight: 700; margin: 1rem 0 0.15rem;
+  }
+  h3 .date { font-weight: 400; color: var(--muted); white-space: nowrap; }
+  h3 + p { margin-bottom: 0.4rem; color: #3a434d; }
+
+  /* Course / resource blocks */
+  .entries p { margin-bottom: 0.8rem; }
+
+  /* Year-tagged lists: year in a left gutter */
+  ul:has(.yr) { list-style: none; padding-left: 0; }
+  ul:has(.yr) li { display: flow-root; padding-left: 7.4rem; margin-bottom: 0.4rem; }
+  .yr { float: left; width: 7rem; margin-left: -7.4rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .role { display: block; font-style: italic; color: var(--muted); font-size: 0.93em; }
+
+  ol { padding-left: 2rem; }
+  li { margin-bottom: 0.3rem; }
+
+  @media (max-width: 600px) {
+    h3 { flex-direction: column; gap: 0; }
+    ul:has(.yr) li { padding-left: 0; }
+    .yr { float: none; display: block; margin-left: 0; width: auto; }
+  }
+}

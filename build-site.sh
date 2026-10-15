@@ -1,24 +1,15 @@
 #!/bin/bash
-# Builds the public website into _site/ (run automatically by GitHub Actions;
-# you can also run it locally to preview: bash build-site.sh, then open _site/index.html)
-# The public version hides your phone number.
+# Builds the public website into _site/ with Quarto, then adds the public PDF.
+# GitHub Actions runs this automatically. To preview locally instead, run:  quarto preview
 set -e
 cd "$(dirname "$0")"
+
+quarto render
+
+# Public PDF (phone number and {.private} items removed, same look as your private PDF)
 OUT=_site
-rm -rf "$OUT" && mkdir -p "$OUT"
-cp cv.css site.css "$OUT"/
-
-page () {  # page <source.md> <output.html> <title>
-  pandoc "$1" -s --lua-filter strip-private.lua --css cv.css --css site.css --include-before-body nav.html \
-    --metadata pagetitle="$3" -o "$OUT/$2"
-}
-page index.md    index.html    "Maximilian Wegener, MPH"
-page CV.md       cv.html       "CV – Maximilian Wegener"
-page projects.md projects.html "Methods & Projects – Maximilian Wegener"
-
-# Public PDF (no phone number, no navigation bar)
-pandoc CV.md -s --lua-filter strip-private.lua --css cv.css --css site.css \
-  --metadata pagetitle="CV – Maximilian Wegener" -o "$OUT/cv-print.html"
+quarto pandoc CV.md -f markdown -s --embed-resources --lua-filter strip-private.lua \
+  --css cv.css --metadata pagetitle="CV – Maximilian Wegener" -o "$OUT/cv-print.html"
 
 for c in google-chrome google-chrome-stable chromium chromium-browser \
          "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"; do

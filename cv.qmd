@@ -1,0 +1,10 @@
+---
+pagetitle: "CV – Maximilian Wegener"
+toc: true
+toc-depth: 2
+toc-title: "Sections"
+---
+
+<!-- The CV content lives in CV.md. Edit that file, not this one. -->
+
+{{< include CV.md >}}

@@ -2,5 +2,9 @@
 CV_Max Wegener.pdf
 CV.html
 _site/
+.quarto/
 .DS_Store
 .Rhistory
+
+/.quarto/
+**/*.quarto_ipynb
