@@ -25,5 +25,5 @@ Before joining the library, I spent over a decade in public health: infectious d
 ## Contact
 
 - Email: [maximilian.wegener@yale.edu](mailto:maximilian.wegener@yale.edu)
-- LinkedIn: [linkedin.com/in/YOUR-LINKEDIN](https://www.linkedin.com/in/YOUR-LINKEDIN) <!-- TODO: replace with your LinkedIn URL -->
-- GitHub: [github.com/CWML](https://github.com/CWML)
+- LinkedIn: [linkedin.com/in/wegenermaximilian](https://www.linkedin.com/in/wegenermaximilian)
+- GitHub: [github.com/mwegener](https://github.com/mwegener)
