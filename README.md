@@ -12,7 +12,7 @@ This repository holds the source for the site. GitHub rebuilds it automatically 
 | `index.md` | Home page |
 | `projects.md` | Methods & Projects page (keep unpublished results off it) |
 | `cv.css`, `site.css` | Styling |
-| `strip-private.lua` | Removes anything marked `[ ... ]{.phone}` in CV.md from the public site and PDF |
+| `strip-private.lua` | Removes anything marked `{.phone}` or `{.private}` in CV.md from the public site and PDF |
 | `nav.html` | The menu at the top of each page |
 | `build.sh` | Builds the **private** PDF (with phone number) locally |
 | `build-site.sh` | Builds the **public** site; GitHub Actions runs this |

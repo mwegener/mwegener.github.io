@@ -25,8 +25,10 @@ University of Nevada, Reno – School of Community Health Sciences
 
 ## Professional Experience
 
+::: {.private}
 ### Epidemiologist Contractor [Feb 2026 – Present]{.date}
 Office of the State Epidemiologist, Nevada Division of Public and Behavioral Health · Reno, NV
+:::
 
 ### Biomedical Informatics Librarian [Oct 2024 – Present]{.date}
 Yale University School of Medicine, Cushing/Whitney Medical Library · New Haven, CT
@@ -241,7 +243,7 @@ Nevada Army National Guard · Stead, NV
 
 ## Professional Groups & Committees
 
-- [2026]{.yr} NV Statewide Respiratory Epi Group
+- [2026]{.yr} NV Statewide Respiratory Epi Group[ ]{.private-item}
 - [2026]{.yr} CSTE Viral Hepatitis Subcommittee
 - [2023–present]{.yr} NSSP CoP: SPHERR Subcommittee
 - [2022–present]{.yr} NSSP CoP: Data Quality Subcommittee
