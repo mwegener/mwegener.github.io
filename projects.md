@@ -45,5 +45,9 @@ An eight-lesson course on data analysis in R (tidyverse and base R): from a mess
 A step-by-step guide and slide deck for the *All of Us* Researcher Workbench 2.0: access, workspaces, cohort and dataset building, and analysis apps.\
 [Website](https://cwml.github.io/All-of-Us-Training-Resources/) · [GitHub](https://github.com/CWML/All-of-Us-Training-Resources)
 
+### Beyond Downloading: Automating Data Retrieval with APIs and Web Scraping
+A practical course for biomedical and public health researchers on getting data with code instead of clicking Download: requesting data from APIs (PubMed, ClinicalTrials.gov, openFDA, CDC, the Census) in R, scraping static pages with rvest, automating dynamic pages with Playwright, and recording provenance so data pulls are reproducible. Includes slides, demo code, and an instructor guide.\
+[Website](https://cwml.github.io/beyond-downloading/) · [GitHub](https://github.com/CWML/beyond-downloading)
+
 ### R for Public Health: Sudan Ministry of Health Workshop
 Three sessions on cleaning a cholera line list, summary statistics and epidemiological measures, and epidemic curves and maps.

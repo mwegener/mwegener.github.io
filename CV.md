@@ -158,6 +158,10 @@ Nevada Army National Guard · Stead, NV
 **Website:** [cwml.github.io/All-of-Us-Training-Resources](https://cwml.github.io/All-of-Us-Training-Resources/)\
 **Repository:** [github.com/CWML/All-of-Us-Training-Resources](https://github.com/CWML/All-of-Us-Training-Resources)
 
+**Resource:** Beyond Downloading: Automating Data Retrieval with APIs and Web Scraping – open course for biomedical and public health researchers on retrieving data with code (PubMed, ClinicalTrials.gov, openFDA, CDC, and Census APIs; static and dynamic web scraping; provenance), with slides, demo code, and an instructor guide. Creator and maintainer.\
+**Website:** [cwml.github.io/beyond-downloading](https://cwml.github.io/beyond-downloading/)\
+**Repository:** [github.com/CWML/beyond-downloading](https://github.com/CWML/beyond-downloading)
+
 ::::
 
 ## Presentations

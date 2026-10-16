@@ -21,6 +21,7 @@ Before joining the library, I spent over a decade in public health: infectious d
 
 - **R Hands-on Workshop Series**: [website](https://cwml.github.io/CWML-R-Hands-on-Workshop-Series/) · [GitHub](https://github.com/CWML/CWML-R-Hands-on-Workshop-Series)
 - **All of Us Researcher Workbench 2.0 Training**: [website](https://cwml.github.io/All-of-Us-Training-Resources/) · [GitHub](https://github.com/CWML/All-of-Us-Training-Resources)
+- **Beyond Downloading: Automating Data Retrieval with APIs and Web Scraping**: [website](https://cwml.github.io/beyond-downloading/) · [GitHub](https://github.com/CWML/beyond-downloading)
 
 ## Contact
 
