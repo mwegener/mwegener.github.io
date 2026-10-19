@@ -15,11 +15,13 @@ University of Nevada, Reno – School of Community Health Sciences
 
 ## Technical Skills
 
-**Analytic software:** R, SQL, SAS, RStudio, Jupyter Notebook, REDCap, PowerBI, MS Excel, Epi-Info 7, SatScan
+**Analytic software:** R, SQL, SAS, Python, RStudio, Positron, Jupyter Notebook, Quarto, REDCap, Power BI, MS Excel, Epi Info 7, SaTScan
+
+**Cloud, version control, and AI tools:** Google BigQuery, Git/GitHub, GitHub Actions, AI-assisted coding (Claude, Claude Code)
 
 **Statistical methods:** Descriptive statistics and Table 1; parametric and non-parametric tests (t-test, ANOVA, Mann–Whitney, Kruskal–Wallis, χ², Spearman) with multiple-testing correction; logistic regression; survival analysis (Kaplan–Meier, log-rank, RMST, Cox PH incl. Schoenfeld diagnostics and stratified models); diagnostic accuracy (ROC/AUC, DeLong, Youden); epidemic curves and spatial mapping (sf); RNA-seq differential expression (DESeq2); variant QC and annotation (VariantAnnotation, PolyPhen-2)
 
-**Databases used:** EpiTrax, ESSENCE, CTEDSS, NBS, All of Us, MarketScan, SEER, Epic Cosmos
+**Databases used:** EpiTrax, ESSENCE, CTEDSS, NBS, All of Us (OMOP CDM), MarketScan, SEER, Epic Cosmos
 
 **Administration:** Data Presentation, Journal Writing, Report Writing, Data Management, Public Health Surveillance, Communication, Training, Facilitation, Stakeholder Engagement, Consultation, Data Visualization, Peer-Reviewing
 
