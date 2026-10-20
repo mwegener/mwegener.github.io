@@ -239,6 +239,7 @@ Nevada Army National Guard · Stead, NV
 
 - [2026]{.yr} Fellow, Saybrook College, Yale University
 - [2026]{.yr} Yale Veterans Network
+- [2026]{.yr} American Medical Informatics Association (AMIA)
 - [2026]{.yr} International Society for Computational Biology (ISCB)
 - [2022–2024]{.yr} Council of State and Territorial Epidemiologists (CSTE)
 - [2021–2023]{.yr} American Public Health Association (APHA)
